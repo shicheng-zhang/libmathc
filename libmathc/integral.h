@@ -3,18 +3,21 @@
 #define math_e M_E
 
 inline float factorial_float (float x);
-inline float factorial_float (float x) {return (sqrt (2 * math_pi * x)) * (pow ((x / e), x));}
+inline float factorial_float (float x) {return (sqrt (2 * math_pi * x)) * (pow ((x / math_e), x));}
 
 inline int factorial (int x);
 inline int factorial (int x) {
     if (x == 0) {return (int) (0);}
     int result = (int) (x);
-    while ((x - 1) > 0) {result *= (x - 1);}
+    while ((x - 1) > 0) {result *= (x - 1);
     x -= 1;} return result;
+}
+
+inline float integral_traditional (float a, float b, float exponent, float additive, float d) {
+    
 }
 
 inline float gamma_new (float x);
 inline float gamma_new (float x) {
     float placeholder = 2.0;
-        
 }
